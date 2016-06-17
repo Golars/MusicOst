@@ -1,0 +1,46 @@
+@base-font: 'Open Sans', sans-serif;
+@base-font-size: 10px;
+@base-color:#757575;
+
+.container{
+  max-width: 1244px;
+  width: 100%;
+  padding: 0;
+}
+.m-menu-category{
+  font-family: @base-font;
+  background: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  font-size: @base-font-size;
+  text-transform: uppercase;
+  position: relative;
+  padding: 47px 0 22px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+  .top_menu a{
+    float: left;
+    margin-right: 38px;
+  }
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color:@base-color;
+  }
+  a:hover{
+    color: #2979ff;
+  }
+
+  a.active{
+    color: #2979ff;
+  }
+
+  .filter a{
+    color: #bdbdbd;
+  }
+  .filter{
+    position: absolute;
+    right:0;
+  }
+}
