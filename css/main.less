@@ -1,26 +1,5 @@
-@base-font: 'Open Sans', sans-serif;
-@base-font-size: 10px;
-@base-color: #757575;
-
-.container {
-  max-width: 1244px;
-  width: 100%;
-  padding: 0;
-}
-
-.no_padding.col-lg-1, .no_padding.col-lg-10, .no_padding.col-lg-11, .no_padding.col-lg-12, .no_padding.col-lg-2,
-.no_padding.col-lg-3, .no_padding.col-lg-4, .no_padding.col-lg-5, .no_padding.col-lg-6, .no_padding.col-lg-7,
-.no_padding.col-lg-8, .no_padding.col-lg-9, .no_padding.col-md-1, .no_padding.col-md-10, .no_padding.col-md-11,
-.no_padding.col-md-12, .no_padding.col-md-2, .no_padding.col-md-3, .no_padding.col-md-4, .no_padding.col-md-5,
-.no_padding.col-md-6, .no_padding.col-md-7, .no_padding.col-md-8, .no_padding.col-md-9, .no_padding.col-sm-1,
-.no_padding.col-sm-10, .no_padding.col-sm-11, .no_padding.col-sm-12, .no_padding.col-sm-2, .no_padding.col-sm-3,
-.no_padding.col-sm-4, .no_padding.col-sm-5, .no_padding.col-sm-6, .no_padding.col-sm-7, .no_padding.col-sm-8,
-.no_padding.col-sm-9, .no_padding.col-xs-1, .no_padding.col-xs-10, .no_padding.col-xs-11, .no_padding.col-xs-12,
-.no_padding.col-xs-2, .no_padding.col-xs-3, .no_padding.col-xs-4, .no_padding.col-xs-5, .no_padding.col-xs-6,
-.no_padding.col-xs-7, .no_padding.col-xs-8, .no_padding.col-xs-9 {
-  padding-right: 0px;
-  padding-left: 0px;
-}
+@import "base";
+@border-line: 1px solid rgba(0, 0, 0, 0.09);
 
 .m-menu-category {
   font-family: @base-font;
@@ -31,198 +10,19 @@
   text-transform: uppercase;
   position: relative;
   padding: 47px 0 22px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: @border-line;
 
   .top_menu a {
     float: left;
     margin-right: 38px;
   }
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
-    color: @base-color;
-  }
-  a:hover {
-    color: #2979ff;
-  }
-
-  a.active {
-    color: #2979ff;
-  }
-
-  .filter a {
-    color: #bdbdbd;
-  }
-  .filter {
+  .filter{
     position: absolute;
     right: 0;
+    a{color: #bdbdbd;}
+    a:hover{color: @base-color-hover;}
   }
-}
-
-.slaider {
-  .blocks {
-    margin-top: 50px;
-    font-weight: bold;
-  }
-  .first-block {
-    float: left;
-    position: relative;
-    margin-right: 15px;
-    margin-bottom: 1px;
-  }
-
-  .add-btm {
-    border: 1px solid rgba(189, 189, 189, 0.09);
-    color: #F5FFFD;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 2px;
-    margin-left: 143px;
-    display: block;
-  }
-  .listen-btm {
-    float: left;
-    border: 1px solid rgba(189, 189, 189, 0.08);
-    border-radius: 24px;
-    color: #F5FFFD;
-    padding: 2px 10px 2px 14px;
-  }
-
-  .play {
-    float: left;
-    padding-right: 10px;
-  }
-
-  .listen {
-    letter-spacing: 2.3px;
-    text-transform: uppercase;
-    font-size: 9px;
-    font-weight: bold;
-    vertical-align: middle;
-    color: #F5FFFD;
-    margin-left: 10px;
-  }
-
-  .fon {
-    height: 400px;
-  }
-
-  .girl1 {
-    position: absolute;
-    top: 50px;
-    left: 48px;
-  }
-
-  .text {
-    position: absolute;
-    left: 356px;
-    top: 66px;
-    margin-bottom: 66px;
-
-    .header {
-      color: #F5FAF6;
-      font-size: 16px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      padding-bottom: 17px;
-    }
-
-    .name {
-      color: #21362D;
-      font-size: 12px;
-      letter-spacing: 3px;
-    }
-
-    .description {
-      font-weight: normal;
-      color: #D6E5DE;
-      font-size: 14px;
-      margin-right: 50px;
-      white-space: pre-line;
-      margin-bottom: 61px;
-    }
-
-    .first-block.chevron-right {
-      position: absolute;
-      bottom: 162px;
-      right: 31px;
-      color: red;
-    }
-  }
-
-  .second-block {
-    margin-top: 1px;
-    margin-bottom: 20px;
-  }
-  .left-block {
-    position: relative;
-    float: left;
-    position: relative;
-
-    .text-2 {
-      position: absolute;
-      left: 20px;
-      bottom: 20px;
-      font-size: 12px;
-    }
-
-    .top20 {
-      color: #F5FFFD;
-      letter-spacing: 3px;
-    }
-
-    .text-2 .add-btm {
-      border: 1px solid rgba(189, 189, 189, 0.3);
-      padding: 5px;
-    }
-
-    .listen-btm {
-
-    }
-  }
-
-  .third-block {
-    position: relative;
-    float: left;
-  }
-
-  .top20 {
-    color: #F5FFFD;
-    letter-spacing: 3px;
-  }
-  .third-block .text-2 .add-btm {
-    border: 1px solid rgba(189, 189, 189, 0.3);
-    padding: 5px;
-  }
-}
-
-.circles {
-  position: absolute;
-  top: 332px;
-  right: 20px;
-
-  .circle {
-    float: right;
-    margin-right: 5px;
-    font-size: 8px;
-  }
-}
-
-.chevron-right {
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
 }
 
 .slider {
@@ -375,4 +175,76 @@
 
   }
 
+}
+
+.m-content {
+  margin-top: 40px;
+
+  .m-music-block{
+    .title{
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 20px 0px;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: @base-color-title;
+      border-bottom: @border-line;
+      span{
+        position: relative;
+        color: #e0e0e0;
+        left: 15px;
+        top: 4px;
+      }
+    }
+    ul {
+      text-align: justify;
+      line-height: 0;
+      zoom:1;
+      margin: 0;
+      padding: 0;
+      text-align-last: justify;
+    }
+    ul:after {
+      width: 100%;
+      height: 0px;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block;
+
+    }
+    ul li  {
+      display: inline-block;
+      text-align: left;
+
+      /* Востанавливаем у потомков, кроме последнего*/
+      line-height: normal;
+
+      /* Без него в Opera будет отступ под элементами */
+      vertical-align: top;
+    }
+    .m-small-el{
+      width: 190px;
+      .cower, .cower img{
+        width: 190px;
+        height: 190px;
+      }
+      .info{
+        padding: 16px 9px 20px;
+        position: relative;
+        .right{
+          color: #bdbdbd;
+          position: absolute;
+          right: 9px;
+          top: 16px;
+          .like{
+            margin-right: 14px;
+          }
+          .zmdi{
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
 }
