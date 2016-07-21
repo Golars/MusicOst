@@ -40,9 +40,10 @@ a:hover, a.active, a:focus {
   color: #2979ff; }
 
 .m-btn, .listen-btm, .add-btm {
+  font-family: "Open Sans Semibold";
   display: inline-block;
   margin-bottom: 0;
-  font-weight: 10px;
+  font-size: 10px;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -50,7 +51,6 @@ a:hover, a.active, a:focus {
   background-image: none;
   border: 1px solid white;
   white-space: nowrap;
-  font-family: "Open Sans Semibold";
   float: left;
   text-transform: uppercase;
   color: #ffffff;
@@ -72,7 +72,7 @@ a:hover, a.active, a:focus {
     color: #ffffff;
     background-color: rgba(230, 230, 230, 0);
     border-color: rgba(224, 224, 224, 0.15); }
-  .m-btn:hover, .listen-btm:hover, .add-btm:hover, .m-btn:focus, .listen-btm:focus, .add-btm:focus, .m-btn.focus, .focus.listen-btm, .focus.add-btm {
+  .m-btn:hover, .listen-btm:hover, .add-btm:hover, .m-btn:focus, .listen-btm:focus, .add-btm:focus, .m-btn.focus, .focus.listen-btm, .focus.add-btm, .m-btn.active, .active.listen-btm, .active.add-btm {
     text-decoration: none;
     background-color: #2979ff; }
   .m-btn span, .listen-btm span, .add-btm span {
@@ -281,8 +281,6 @@ a:hover, a.active, a:focus {
         display: none; }
       .m-content .m-music-block-small .m-blocks .m-small-el:nth-child(16) {
         display: none; } }
-  .m-content .m-music-block-small .m-blocks .m-small-el:last-child {
-    margin-right: 0; }
   .m-content .m-music-block-small .m-blocks .m-small-el .music-style, .m-content .m-music-block-small .m-blocks .m-small-el .content .singer {
     color: #616161;
     font-family: "Open Sans Semibold"; }
