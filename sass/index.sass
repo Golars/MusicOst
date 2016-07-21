@@ -1,0 +1,281 @@
+@import "base"
+
+$border-line: 1px solid rgba(0, 0, 0, 0.09)
+
+.m-menu-category
+  +borderBottom()
+  font-family: $base-font
+  background: #ffffff
+  font-weight: bold
+  letter-spacing: 2.5px
+  font-size: $base-font-size
+  text-transform: uppercase
+  position: relative
+  padding: 47px 0 22px
+
+  .top_menu a 
+    float: left
+    margin-right: 38px
+
+  .filter
+    position: absolute
+    right: 0
+    color: #d9000e
+    a:hover
+      color: $base-color-hover
+
+=mInfoPlayer($h)
+
+  +shadow-base()
+  position: relative
+  height: $h
+  width: 100%
+  overflow: hidden
+  color: white
+
+  .shadow
+    background-color: rgba(0, 0, 0, 0.45)
+    height: 100%
+    width: 100%
+    z-index: 1
+    position: absolute
+  .fon img
+    max-width: 100%
+  .text
+    z-index: 5
+    position: absolute
+    left: 20px
+    bottom: 20px
+    .title
+      color: $base-color-title-text
+      letter-spacing: 3px
+      font-size: 12px
+      padding-bottom: 22px
+
+=screen($count, $wBlock, $minW, $maxW)
+  @media only screen and (max-width: $maxW) and (min-width: $minW)
+  &:nth-child(#{$count}n)
+    margin-right: 0
+
+  width: $wBlock / $maxW * 100%
+  margin-right: ($maxW - $wBlock * $count)/(($count - 1) * $maxW) * 100%
+
+.m-title
+  letter-spacing: 2.5px
+  text-transform: uppercase
+  padding: 20px 0px
+  margin-bottom: 30px
+  font-weight: 600
+  color: $base-color-title
+  border-bottom: $border-line
+  span
+    position: relative
+    color: #e0e0e0
+    left: 15px
+    top: 4px
+
+.slider 
+  margin-top: 20px
+  .fon
+    width: 100%
+    overflow: hidden
+    img
+      width: 100%
+
+  .m-slide-big
+    padding-left: 0px
+    padding-right: 20px
+
+    .fon
+      height: 360px
+      img
+        min-height: 360px
+
+    .m-slide-left
+      position: absolute
+      display: block
+      top: 150px
+      font-size: 50px
+      color: white
+      opacity: 0.25
+      cursor: pointer
+      &:hover
+        opacity: 1
+
+    .m-slide-right
+      @extend .m-slide-left
+      right: 31px
+
+    .m-slide-left
+      left: 31px
+      display: none
+
+    .m-slide-el
+      +shadow-base()
+      display: none
+
+    .m-slide-el.active
+      display: block
+
+    .text 
+      position: absolute
+      left: 356px
+      top: 66px
+      margin-bottom: 66px
+
+      .header 
+        color: #F5FAF6
+        font-size: 16px
+        font-weight: bold
+        letter-spacing: 3px
+        padding-bottom: 17px
+
+      .name 
+        color: #21362D
+        font-size: 12px
+        letter-spacing: 3px
+
+      .description 
+        font-weight: normal
+        color: #D6E5DE
+        font-size: 14px
+        margin-right: 50px
+        white-space: pre-line
+        margin-bottom: 61px
+
+      .first-block.chevron-right 
+        position: absolute
+        bottom: 162px
+        right: 31px
+        color: red
+
+  .left-block
+    .left-block-el
+      +mInfoPlayer(170px)
+
+      &:first-child
+        margin-bottom: 20px
+
+
+.m-content
+  .m-music-block
+    ul
+      text-align: justify
+      line-height: 0
+      zoom: 1
+      margin: 0
+      padding: 0
+      text-align-last: justify
+
+    ul:after
+      width: 100%
+      height: 0px
+      visibility: hidden
+      overflow: hidden
+      content: ''
+      display: inline-block
+
+    ul li
+      display: inline-block
+      text-align: left
+
+      /* Востанавливаем у потомков, кроме последнего*/
+      line-height: normal
+
+      /* Без него в Opera будет отступ под элементами */
+      vertical-align: top
+
+    .m-small-el
+      +shadow-base()
+      width: 190px
+      .cover, .cover img
+        width: 190px
+        height: 190px
+      .info
+        padding: 16px 9px 20px
+        position: relative
+        .right
+          color: #bdbdbd
+          position: absolute
+          right: 9px
+          top: 16px
+          .like
+            margin-right: 14px
+
+          .zmdi
+            margin-right: 8px
+
+  .m-music-block-small
+
+    .m-blocks
+      $mBlockWidth: 140px
+
+      .m-small-el
+
+        float: left
+        +shadow-base()
+        width: $mBlockWidth / $width * 100%
+        margin-right: ($width - $mBlockWidth * 8)/(7 * $width) * 100%
+        margin-bottom: 40px
+
+        .cover, .cover img
+          width: 100%
+          height: auto
+        .info
+          padding: 16px 9px 20px
+          position: relative
+        @media only screen and (min-width: $width)
+          &:nth-child(8n)
+            margin-right: 0
+        @media only screen and (max-width: $width) and (min-width: 900px)
+          +screen(7, $mBlockWidth, 900px, $width)
+          &:nth-child(15)
+            display: none
+          &:nth-child(16)
+            display: none
+        &:last-child
+          margin-right: 0
+        .music-style
+          color: $base-color-title
+          font-family: "Open Sans Semibold"
+        .content
+          margin: 18px 0 5px
+          .singer
+            @extend .music-style
+            color: $base-color-hover
+            font-size: 12px
+            margin-bottom: 10px
+          .song
+            color: $base-color-title
+
+.m-playlist
+  .m-el
+    +shadow-base()
+    float: left
+    +mInfoPlayer(170px)
+    $mBlockWidth: 400px
+    width: $mBlockWidth / $width * 100%
+    margin-right: ($width - $mBlockWidth * 3)/$width * 50%
+
+    &:first-child, &:last-child
+      margin-right: 0
+
+.m-footer
+  position: relative
+  .menu
+    float: left
+    margin-left: 70px
+    a
+      font-size: 12px
+      color: #bdbdbd
+      line-height: 40px
+      float: left
+      margin-right: 38px
+      &:hover
+        color: $base-color-hover
+  .mobil-shop-ico
+    position: absolute
+    right: 0px
+    @extend .logo
+    background-image: url("../images/apk.png")
+    width: 280px
