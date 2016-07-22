@@ -15,9 +15,15 @@
   100%
     background-color: transparent
 
-=addFontHoverAnimation()
++keyframes(fadeOnColorHover)
+  0%
+    color: $top-color
+  100%
+    color: $base-color-hover
+
+=addFontHoverAnimation($animation : fadeOnFontHover)
   &:hover
-    +animation(fadeOnFontHover .4s)
+    +animation(#{$animation} .4s)
 .logo
   background-image: url("../images/logo.png")
   +img-responsive()

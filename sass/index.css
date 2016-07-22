@@ -40,6 +40,26 @@
     background-color: #2979ff; }
   100% {
     background-color: transparent; } }
+@-webkit-keyframes fadeOnColorHover {
+  0% {
+    color: #e0e0e0; }
+  100% {
+    color: #2979ff; } }
+@-moz-keyframes fadeOnColorHover {
+  0% {
+    color: #e0e0e0; }
+  100% {
+    color: #2979ff; } }
+@-o-keyframes fadeOnColorHover {
+  0% {
+    color: #e0e0e0; }
+  100% {
+    color: #2979ff; } }
+@keyframes fadeOnColorHover {
+  0% {
+    color: #e0e0e0; }
+  100% {
+    color: #2979ff; } }
 .logo, .m-footer .mobil-shop-ico {
   background-image: url("../images/logo.png");
   display: block;
@@ -402,5 +422,52 @@ a:hover, a.active, a:focus {
     right: 0px;
     background-image: url("../images/apk.png");
     width: 280px; }
+
+.m-user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden; }
+  .m-user-avatar img {
+    width: 50px;
+    height: 50px; }
+
+.player {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  display: block;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid #f5f5f5;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.25);
+  box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.25); }
+  .player .container {
+    margin-bottom: 0;
+    color: #e0e0e0; }
+    .player .container .left {
+      float: left; }
+    .player .container .right {
+      float: right; }
+      .player .container .right .m-user-avatar {
+        float: right; }
+      .player .container .right .icons {
+        font-size: 14px;
+        vertical-align: middle;
+        display: block;
+        float: right;
+        margin-right: 20px;
+        padding: 5px;
+        line-height: 40px;
+        cursor: pointer; }
+        .player .container .right .icons i:hover {
+          color: #2979ff; }
+          .player .container .right .icons i:hover:hover {
+            -webkit-animation: fadeOnColorHover 0.4s;
+            -o-animation: fadeOnColorHover 0.4s;
+            -moz-animation: fadeOnColorHover 0.4s;
+            animation: fadeOnColorHover 0.4s; }
 
 /*# sourceMappingURL=index.css.map */
