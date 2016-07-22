@@ -20,19 +20,22 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
   .filter
     position: absolute
     right: 0
-    color: #d9000e
-    a:hover
-      color: $base-color-hover
+    a
+      color: #bdbdbd
+      &:hover
+        color: $base-color-hover
 
 =mInfoPlayer($h)
-
+  +border-radius($base-block-border-radius)
   +shadow-base()
   position: relative
   height: $h
   width: 100%
   overflow: hidden
   color: white
-
+  &:hover
+    .shadow
+      background-color: rgba(0, 0, 0, 0.25)
   .shadow
     background-color: rgba(0, 0, 0, 0.45)
     height: 100%
@@ -83,11 +86,12 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
       width: 100%
 
   .m-slide-big
-    padding-left: 0px
+    padding-left: 0
     padding-right: 20px
 
     .fon
       height: 360px
+      overflow: hidden
       img
         min-height: 360px
 
@@ -115,6 +119,8 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
       display: none
 
     .m-slide-el.active
+      +border-radius($base-block-border-radius)
+      overflow: hidden
       display: block
 
     .text 
@@ -186,6 +192,7 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
       vertical-align: top
 
     .m-small-el
+      +border-radius($base-block-border-radius)
       +shadow-base()
       width: 190px
       .cover, .cover img
@@ -211,8 +218,9 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
       $mBlockWidth: 140px
 
       .m-small-el
-        float: left
         +shadow-base()
+        +border-radius($base-block-border-radius)
+        float: left
         width: $mBlockWidth / $width * 100%
         margin-right: ($width - $mBlockWidth * 8)/(7 * $width) * 100%
         margin-bottom: 40px

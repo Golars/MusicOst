@@ -1,7 +1,18 @@
 // Animations
+=keyframes($animationName)
+  @-webkit-keyframes #{$animationName}
+    @content
+  @-moz-keyframes #{$animationName}
+    @content
+  @-o-keyframes #{$animationName}
+    @content
+  @keyframes #{$animationName}
+    @content
+
 =animation($animation)
   -webkit-animation: $animation
   -o-animation: $animation
+  -moz-animation: $animation
   animation: $animation
 
 =animation-name($name)
