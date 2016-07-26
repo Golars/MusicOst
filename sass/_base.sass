@@ -21,9 +21,9 @@
   100%
     color: $base-color-hover
 
-=addFontHoverAnimation($animation : fadeOnFontHover)
+=addFontHoverAnimation($animation : fadeOnFontHover, $time: 0.4)
   &:hover
-    +animation(#{$animation} .4s)
+    +animation(#{$animation} #{$time}s)
 .logo
   background-image: url("../images/logo.png")
   +img-responsive()
