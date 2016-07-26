@@ -1,4 +1,5 @@
 @import "base"
+@import "player"
 
 $border-line: 1px solid rgba(0, 0, 0, 0.09)
 
@@ -11,7 +12,7 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
   font-size: $base-font-size
   text-transform: uppercase
   position: relative
-  padding: 47px 0 22px
+  padding: 120px 0 22px
 
   .top_menu a 
     float: left
@@ -291,35 +292,3 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
   overflow: hidden
   img
     +square(50px)
-.player
-  position: fixed
-  right: 0
-  top: 0
-  width: 100%
-  z-index: 5
-  display: block
-  padding: 10px 0
-  background-color: #ffffff
-  border-bottom: 3px solid $base-color-white
-  +shadow-base()
-  .container
-    margin-bottom: 0
-    color: #e0e0e0
-    .left
-      float: left
-    .right
-      float: right
-      .m-user-avatar
-        float: right
-      .icons
-        font-size: 14px
-        vertical-align: middle
-        display: block
-        float: right
-        margin-right: 20px
-        padding: 5px
-        line-height: 40px
-        cursor: pointer
-        i:hover
-          color: $base-color-hover
-          +addFontHoverAnimation(fadeOnColorHover)
