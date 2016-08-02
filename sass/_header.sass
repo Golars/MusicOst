@@ -1,6 +1,6 @@
 @import "base"
 
-.header
+section.header
   position: relative
   margin-top: 74px
   +size(100%, 227px)
@@ -36,8 +36,12 @@
         opacity: 0.25
   .bg
     display: block
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
     position: absolute
-    min-width: 100%
+    width: 100%
     min-height: 227px
     z-index: -2
 

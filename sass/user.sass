@@ -1,0 +1,112 @@
+@import "base"
+@import "player"
+@import "header"
+
+.play-track
+  width: 20%
+  float: left
+.track-playlist
+  float: left
+  width: 80%
+  .header
+    position: relative
+    .volume
+      width: 10%
+      height: 40px
+      float: left
+      &:hover
+        .line
+          background-color: $base-color-hover
+      +line(3px)
+      .line
+        background-color: $base-color-white-2
+      position: relative
+    .info-track
+      width: 60%
+      @extend .volume
+      vertical-align: top
+      color: $base-color-dark
+      font-size: 12px
+      font-family: "Open Sans Semibold", sans-serif
+      text-align: left
+      margin: 0 50px
+      +line(3px)
+      .time
+        position: absolute
+        right: 0
+        top: 0
+        color: $base-color-white-2
+        font-size: 10px
+    .control
+      float: left
+      position: relative
+      .icon
+        color: $base-color-white-2
+        font-size: 13px
+        padding: 5px
+        &:hover
+          color: $base-color-hover
+      .icon.blue
+        display: inline-block
+        color: $base-color-white
+        padding: 10px
+        margin: 0 10px
+        background-color: #2979ff
+        +border-radius(25px)
+        line-height: 5px
+        &:hover
+          background-color: $base-color-white
+      &.right
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 2
+  .tracks
+    position: relative
+    .track-el
+      position: relative
+      float: left
+      width: 100%
+      padding: 10px 0
+      text-align: left
+      color: $base-color-white-2
+      font-family: "Open Sans Semibold"
+      &.play
+        .position
+          color: transparent
+          position: relative
+          &:before
+            display: block
+            position: absolute
+            top: 0px
+            left: 0
+            color: $base-color-hover
+            font: normal normal normal 14px/1 'Material-Design-Iconic-Font'
+            content: "\f26d"
+            text-rendering: auto
+            -webkit-font-smoothing: antialiased
+            -moz-osx-font-smoothing: grayscale
+            +animation(scale2x 1s infinite alternate)
+      .position
+        margin-left: 20px
+        float: left
+        width: 30px
+      .name
+        float: left
+        width: 40%
+        color: $base-color-dark-2
+      .artist
+        float: left
+        width: 40%
+      .duration
+        position: absolute
+        right: 20px
+        float: left
+
++keyframes(scale2x)
+  0%
+    +scale(1)
+  50%
+    +scale(1.5)
+  100%
+    +scale(1)

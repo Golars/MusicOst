@@ -10,15 +10,8 @@ $line-height: 3px
   display: block
   padding: 10px 0
   background-color: #ffffff
-  border-bottom: $line-height solid $base-color-white
   +box-shadow(0px 5px 5px 0px rgba(33,33,33,0.10))
-  .line
-    background-color: $base-color-hover
-    height: $line-height
-    position: absolute
-    z-index: 6
-    width: 45%
-    bottom: -$line-height
+  +line($line-height)
   .container
     margin-bottom: 0
     color: #e0e0e0
@@ -45,10 +38,6 @@ $line-height: 3px
         margin: 0 auto
         .icon
           display: inline-block
-          font: normal normal normal 14px/1 'Material-Design-Iconic-Font'
-          text-rendering: auto
-          -webkit-font-smoothing: antialiased
-          -moz-osx-font-smoothing: grayscale
           font-size: 20px
           line-height: 40px
           vertical-align: middle
@@ -60,21 +49,9 @@ $line-height: 3px
 
         .icon_repeat
           margin-right: 70px
-          &:before
-            content: '\f3b2'
-        .icon_prev
-          &:before
-            content: '\f3a0'
-        .icon_pause
-          &:before
-            content: '\f3a7'
-        .icon_next
-          @extend .icon_repeat
-          &:before
-            content: '\f39f'
-        .icon_shuffle
-          &:before
-            content: '\f3b3'
+        .icon-next
+          @extend .icon-repeat
+
     .right
       width: 20%
       float: right

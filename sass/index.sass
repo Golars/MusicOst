@@ -2,8 +2,6 @@
 @import "player"
 @import "header"
 
-$border-line: 1px solid rgba(0, 0, 0, 0.09)
-
 .m-menu-category
   +borderBottom()
   font-family: $base-font
@@ -18,7 +16,7 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
   &.small-padding-top
     padding-top: 50px
 
-  .top_menu a 
+  .top-menu a
     float: left
     margin-right: 38px
 
@@ -167,6 +165,27 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
       &:first-child
         margin-bottom: 20px
 
+
+.m-small-el
+  +border-radius($base-block-border-radius)
+  +shadow-base()
+  width: 190px
+  .cover, .cover img
+    width: 190px
+    height: 190px
+  .info
+    padding: 16px 9px 20px
+    position: relative
+    .right
+      color: #bdbdbd
+      position: absolute
+      right: 9px
+      top: 16px
+      .like
+        margin-right: 14px
+
+      .zmdi
+        margin-right: 8px
 .m-content
   .m-music-block
     ul
@@ -195,26 +214,6 @@ $border-line: 1px solid rgba(0, 0, 0, 0.09)
       /* Без него в Opera будет отступ под элементами */
       vertical-align: top
 
-    .m-small-el
-      +border-radius($base-block-border-radius)
-      +shadow-base()
-      width: 190px
-      .cover, .cover img
-        width: 190px
-        height: 190px
-      .info
-        padding: 16px 9px 20px
-        position: relative
-        .right
-          color: #bdbdbd
-          position: absolute
-          right: 9px
-          top: 16px
-          .like
-            margin-right: 14px
-
-          .zmdi
-            margin-right: 8px
 
   .m-music-block-small
 
