@@ -3,8 +3,36 @@
 @import "header"
 
 .play-track
-  width: 20%
+  margin-right: 20px/$width * 100%
+  width: 20% - 20px/$width * 100%
   float: left
+  .m-small-el
+    width: 100%
+    +box-shadow(none)
+    +borderBottom()
+    .cover
+      position: relative
+      width: 100%
+      height: auto
+      margin-bottom: 24px
+      .first
+        bottom: -6px
+        position: absolute
+        width: 170px/190px *100%
+        left: (100% - 170px/190px *100%)/2
+        height: 10px
+        z-index: -3
+        background-color: transparentize($base-color-dark, 0.9)
+      .last
+        @extend .first
+        width: 150px/190px *100%
+        left: (100% - 150px/190px *100%)/2
+        height: 16px
+        bottom: -14px
+        background-color: transparentize($base-color-dark, 0.95)
+    .cover img
+      width: 100%
+      height: auto
 .track-playlist
   float: left
   width: 80%

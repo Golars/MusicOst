@@ -880,8 +880,36 @@ section.header {
     z-index: -2; }
 
 .play-track {
-  width: 20%;
+  margin-right: 1.60772%;
+  width: 18.39228%;
   float: left; }
+  .play-track .m-small-el {
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09); }
+    .play-track .m-small-el .cover {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px; }
+      .play-track .m-small-el .cover .first, .play-track .m-small-el .cover .last {
+        bottom: -6px;
+        position: absolute;
+        width: 89.47368%;
+        left: 5.26316%;
+        height: 10px;
+        z-index: -3;
+        background-color: rgba(33, 33, 33, 0.1); }
+      .play-track .m-small-el .cover .last {
+        width: 78.94737%;
+        left: 10.52632%;
+        height: 16px;
+        bottom: -14px;
+        background-color: rgba(33, 33, 33, 0.05); }
+    .play-track .m-small-el .cover img {
+      width: 100%;
+      height: auto; }
 
 .track-playlist {
   float: left;
