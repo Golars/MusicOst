@@ -879,6 +879,25 @@ section.header {
     min-height: 227px;
     z-index: -2; }
 
+.video .player {
+  border-color: transparent;
+  background-color: #212121; }
+.video .glyphicon.glyphicon-chevron-left, .video .glyphicon.glyphicon-chevron-right {
+  font-family: "Material-Design-Iconic-Font"; }
+  .video .glyphicon.glyphicon-chevron-left:before, .video .glyphicon.glyphicon-chevron-right:before {
+    font-size: 60px;
+    content: ""; }
+.video .glyphicon.glyphicon-chevron-right:before {
+  content: ""; }
+.video .slider {
+  margin-top: 72px; }
+.video .m-small-el .cover {
+  height: 260px; }
+  .video .m-small-el .cover img {
+    height: auto; }
+.video .m-footer .logo.simple, .video .m-footer .simple.mobil-shop-ico {
+  background-image: none; }
+
 .m-menu-category {
   border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   font-family: "Open Sans", sans-serif;

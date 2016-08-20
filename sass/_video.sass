@@ -1,0 +1,22 @@
+.video
+  .player
+    border-color: transparent
+    background-color: #212121
+  .glyphicon.glyphicon-chevron-left
+    font-family: "Material-Design-Iconic-Font"
+    &:before
+      font-size: 60px
+      content: '\f2fa'
+  .glyphicon.glyphicon-chevron-right
+    @extend .glyphicon.glyphicon-chevron-left
+    &:before
+      content: '\f2fb'
+  .slider
+    margin-top: 72px
+  .m-small-el
+    .cover
+      height: 260px
+      img
+        height: auto
+  .m-footer .logo.simple
+    background-image: none

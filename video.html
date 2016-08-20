@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Music</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
-<body>
-
+<body class="video">
 <section class="player">
     <section class="container">
         <div class="left">
-            <img src="images/logo_50.png">
-        </div>
-        <div class="center">
-            <div class="controls">
-                <div class="icon icon-repeat"></div>
-                <div class="icon icon-prev"></div>
-                <div class="icon icon-pause"></div>
-                <div class="icon icon-next"></div>
-                <div class="icon icon-shuffle"></div>
-            </div>
+            <img src="images/logo_video_white.png">
         </div>
         <div class="right">
             <div class="m-user-avatar">
@@ -39,132 +35,61 @@
             </div>
         </div>
     </section>
-    <div class="line"></div>
 </section>
-<section class="m-menu-category container">
-    <div class="top-menu">
-        <a href="#" class="active">все</a>
-        <a href="#">треки</a>
-        <a href="#">альбомы</a>
-        <a href="#">исполнители</a>
-        <a href="#">рекомендации</a>
-        <a href="#">моя музыка</a>
-    </div>
-    <div class="filter">
-        <a href="#">фильтр</a>
-    </div>
-</section>
-<section class="slider container">
-    <div class="col-xs-8 m-slide-big">
-        <div class="m-slide-el el-1 active">
-            <div class="fon">
-                <img src="images/fon.jpg">
+<section class="slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/video/img1.jpg">
             </div>
-            <div class="text">
-                <div class="header">
-                    МЕСЯЦ МАЙ
-                </div>
-                <div class="name">
-                    ЮЛИЯ ПАРШУТА
-                </div>
-                <div class="description">
-                    Свежий релиз от знаменитого дуэта насквозь
-                    пропитан "белым" хип-хопом - легким и хитовим.
-                    А огромное количиство приглашенных звезд.
-                </div>
-                <div class="listen-btm">
-                    <i class="zmdi zmdi-play"></i>
-                    <span class="listen">прослушать</span>
-                </div>
-                <div class="add-btm">
-                    <i class="zmdi zmdi-plus"></i>
-                </div>
+            <div class="item">
+                <img src="images/video/img2.jpg">
+            </div>
+            <div class="item">
+                <img src="images/video/img3.jpg">
+            </div>
+            <div class="item">
+                <img src="images/video/img4.jpg">
+            </div>
+            <div class="item">
+                <img src="images/video/img5.jpg">
             </div>
         </div>
-        <div class="m-slide-el el-2">
-            <div class="fon">
-                <img src="images/fon.jpg">
-            </div>
-            <div class="text">
-                <div class="header">
-                    МЕСЯЦ Yooo
-                </div>
-                <div class="name">
-                    ЮЛИЯ ПАРШУТА
-                </div>
-                <div class="description">
-                    Свежий релиз от знаменитого дуэта насквозь
-                    пропитан "белым" хип-хопом - легким и хитовим.
-                    А огромное количиство приглашенных звезд.
-                </div>
-                <div class="listen-btm">
-                    <i class="zmdi zmdi-play"></i>
-                    <span class="listen">прослушать</span>
-                </div>
-                <div class="add-btm">
-                    <i class="zmdi zmdi-plus"></i>
-                </div>
-            </div>
-        </div>
-        <div class="m-slide-left">
-            <i class="zmdi zmdi-chevron-left"></i>
-        </div>
-        <div class="m-slide-right">
-            <i class="zmdi zmdi-chevron-right"></i>
-        </div>
-    </div>
-    <div class="col-xs-4 left-block no_padding">
-        <div class="left-block-el">
-            <div class="shadow"></div>
-            <div class="fon">
-                <img src="images/girl2.png">
-            </div>
-            <div class="text">
-                <div class="title">
-                    ТОП 20
-                </div>
-                <div class="listen-btm">
-                    <i class="zmdi zmdi-play"></i>
-                    <span class="listen">прослушать</span>
-                </div>
-                <div class="add-btm">
-                    <i class="zmdi zmdi-plus"></i>
-                </div>
-            </div>
-        </div>
-        <div class="left-block-el">
-            <div class="shadow"></div>
-            <div class="fon">
-                <img src="images/water.png">
-            </div>
-            <div class="text">
-                <div class="title">
-                    ТОП 20
-                </div>
-                <div class="listen-btm">
-                    <i class="zmdi zmdi-play"></i>
-                    <span class="listen">прослушать</span>
-                </div>
-                <div class="add-btm">
-                    <i class="zmdi zmdi-plus"></i>
-                </div>
-            </div>
-        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </section>
 <section class="m-content container">
     <div class="m-music-block">
         <div class="m-title">
-            Музыка для вас<span class="zmdi zmdi-more"></span>
+            Премьеры<span class="zmdi zmdi-more"></span>
         </div>
         <ul>
             <li>
                 <div class="col-xs-2 col-md-3 no_padding m-small-el">
                     <div class="cover">
-                        <img src="images/album1.jpg"/>
+                        <img src="images/video/b1.jpg"/>
                     </div>
                     <div class="info">
-                        <div class="year">2010</div>
+                        <div class="year">2016</div>
                         <div class="right">
                             <span class="like"><i class="zmdi zmdi-favorite-outline"></i>1k</span>
                             <span class="comments"><i class="zmdi zmdi-comment-outline"></i> 1k</span>
@@ -175,10 +100,10 @@
             <li>
                 <div class="col-xs-2 no_padding m-small-el">
                     <div class="cover">
-                        <img src="images/album2.jpg"/>
+                        <img src="images/video/b2.jpg"/>
                     </div>
                     <div class="info">
-                        <div class="year">2010</div>
+                        <div class="year">2016</div>
                         <div class="right">
                             <span class="like"><i class="zmdi zmdi-favorite-outline"></i>1k</span>
                             <span class="comments"><i class="zmdi zmdi-comment-outline"></i> 1k</span>
@@ -189,10 +114,10 @@
             <li>
                 <div class="col-xs-2 no_padding m-small-el">
                     <div class="cover">
-                        <img src="images/album3.jpg"/>
+                        <img src="images/video/b3.jpg"/>
                     </div>
                     <div class="info">
-                        <div class="year">2010</div>
+                        <div class="year">2016</div>
                         <div class="right">
                             <span class="like"><i class="zmdi zmdi-favorite-outline"></i>1k</span>
                             <span class="comments"><i class="zmdi zmdi-comment-outline"></i> 1k</span>
@@ -203,10 +128,10 @@
             <li>
                 <div class="col-xs-2 no_padding m-small-el">
                     <div class="cover">
-                        <img src="images/album4.jpg"/>
+                        <img src="images/video/b4.jpg"/>
                     </div>
                     <div class="info">
-                        <div class="year">2010</div>
+                        <div class="year">2016</div>
                         <div class="right">
                             <span class="like"><i class="zmdi zmdi-favorite-outline"></i>1k</span>
                             <span class="comments"><i class="zmdi zmdi-comment-outline"></i> 1k</span>
@@ -217,10 +142,10 @@
             <li>
                 <div class="col-xs-2 no_padding m-small-el">
                     <div class="cover">
-                        <img src="images/album5.jpg"/>
+                        <img src="images/video/b5.jpg"/>
                     </div>
                     <div class="info">
-                        <div class="year">2010</div>
+                        <div class="year">2016</div>
                         <div class="right">
                             <span class="like"><i class="zmdi zmdi-favorite-outline"></i>1k</span>
                             <span class="comments"><i class="zmdi zmdi-comment-outline"></i> 1k</span>
@@ -231,10 +156,10 @@
             <li>
                 <div class="col-xs-2 no_padding m-small-el">
                     <div class="cover">
-                        <img src="images/album6.jpg"/>
+                        <img src="images/video/b6.jpg"/>
                     </div>
                     <div class="info">
-                        <div class="year">2010</div>
+                        <div class="year">2016</div>
                         <div class="right">
                             <span class="like"><i class="zmdi zmdi-favorite-outline"></i>1k</span>
                             <span class="comments"><i class="zmdi zmdi-comment-outline"></i> 1k</span>
@@ -248,198 +173,200 @@
 <section class="m-content container">
     <div class="m-music-block-small">
         <div class="m-title">
-            Музыка для вас<span class="zmdi zmdi-more"></span>
+            Фильмы<span class="zmdi zmdi-more"></span>
         </div>
         <div class="m-blocks">
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album7.jpg"/>
+                    <img src="images/video/b3.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Фантастика</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Книга джунглей</div>
+                        <div class="song">Великобритания, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album8.jpg"/>
+                    <img src="images/video/b2.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Джульетта</div>
+                        <div class="song">Испания</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album9.jpg"/>
+                    <img src="images/video/b5.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Приключения</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Зверополис</div>
+                        <div class="song">США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album10.jpg"/>
+                    <img src="images/video/b7.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album11.jpg"/>
+                    <img src="images/video/b4.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album11a.jpg"/>
+                    <img src="images/video/b1.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-small-el">
+                <div class="cover">
+                    <img src="images/video/b3.jpg"/>
+                </div>
+                <div class="info">
+                    <div class="music-style">2016, Фантастика</div>
+                    <div class="content">
+                        <div class="singer">Книга джунглей</div>
+                        <div class="song">Великобритания, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album11b.jpg"/>
+                    <img src="images/video/b2.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Джульетта</div>
+                        <div class="song">Испания</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album12.jpg"/>
+                    <img src="images/video/b5.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Приключения</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Зверополис</div>
+                        <div class="song">США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album14.jpg"/>
+                    <img src="images/video/b7.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album15.jpg"/>
+                    <img src="images/video/b4.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album16.jpg"/>
+                    <img src="images/video/b1.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-small-el">
+                <div class="cover">
+                    <img src="images/video/b3.jpg"/>
+                </div>
+                <div class="info">
+                    <div class="music-style">2016, Фантастика</div>
+                    <div class="content">
+                        <div class="singer">Книга джунглей</div>
+                        <div class="song">Великобритания, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album17.jpg"/>
+                    <img src="images/video/b2.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Джульетта</div>
+                        <div class="song">Испания</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album18.jpg"/>
+                    <img src="images/video/b5.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Приключения</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Зверополис</div>
+                        <div class="song">США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album19.jpg"/>
+                    <img src="images/video/b7.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
-                    </div>
-                </div>
-            </div>
-            <div class="m-small-el">
-                <div class="cover">
-                    <img src="images/album20.jpg"/>
-                </div>
-                <div class="info">
-                    <div class="music-style">ROCK</div>
-                    <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
-                    </div>
-                </div>
-            </div>
-            <div class="m-small-el">
-                <div class="cover">
-                    <img src="images/album21.jpg"/>
-                </div>
-                <div class="info">
-                    <div class="music-style">ROCK</div>
-                    <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
@@ -448,12 +375,12 @@
 </section>
 <section class="m-playlist container">
     <div class="m-title">
-        Плейлисты<span class="zmdi zmdi-more"></span>
+        Фильмы Для Вас<span class="zmdi zmdi-more"></span>
     </div>
     <div class="m-el">
         <div class="shadow"></div>
         <div class="fon">
-            <img src="images/big1.jpg"/>
+            <img src="images/video/bb2.jpg"/>
         </div>
         <div class="shadow"></div>
         <div class="text">
@@ -462,7 +389,7 @@
             </div>
             <div class="listen-btm">
                 <i class="zmdi zmdi-play"></i>
-                <span class="listen">прослушать</span>
+                <span class="listen">смотреть</span>
             </div>
             <div class="add-btm">
                 <i class="zmdi zmdi-plus"></i>
@@ -472,7 +399,7 @@
     <div class="m-el">
         <div class="shadow"></div>
         <div class="fon">
-            <img src="images/big2.jpg"/>
+            <img src="images/video/bb3.jpg"/>
         </div>
         <div class="shadow"></div>
         <div class="text">
@@ -481,7 +408,7 @@
             </div>
             <div class="listen-btm">
                 <i class="zmdi zmdi-play"></i>
-                <span class="listen">прослушать</span>
+                <span class="listen">смотреть</span>
             </div>
             <div class="add-btm">
                 <i class="zmdi zmdi-plus"></i>
@@ -491,7 +418,7 @@
     <div class="m-el">
         <div class="shadow"></div>
         <div class="fon">
-            <img src="images/big3.jpg"/>
+            <img src="images/video/bb5.jpg"/>
         </div>
         <div class="shadow"></div>
         <div class="text">
@@ -500,7 +427,7 @@
             </div>
             <div class="listen-btm">
                 <i class="zmdi zmdi-play"></i>
-                <span class="listen">прослушать</span>
+                <span class="listen">смотреть</span>
             </div>
             <div class="add-btm">
                 <i class="zmdi zmdi-plus"></i>
@@ -514,195 +441,198 @@
             Новые поступления<span class="zmdi zmdi-more"></span>
         </div>
         <div class="m-blocks">
+
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album22.jpg"/>
+                    <img src="images/video/b3.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Фантастика</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Книга джунглей</div>
+                        <div class="song">Великобритания, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album23.jpg"/>
+                    <img src="images/video/b2.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Джульетта</div>
+                        <div class="song">Испания</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album24.jpg"/>
+                    <img src="images/video/b5.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Приключения</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Зверополис</div>
+                        <div class="song">США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album25.jpg"/>
+                    <img src="images/video/b7.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album26.jpg"/>
+                    <img src="images/video/b4.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album27.jpg"/>
+                    <img src="images/video/b1.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-small-el">
+                <div class="cover">
+                    <img src="images/video/b3.jpg"/>
+                </div>
+                <div class="info">
+                    <div class="music-style">2016, Фантастика</div>
+                    <div class="content">
+                        <div class="singer">Книга джунглей</div>
+                        <div class="song">Великобритания, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album28.jpg"/>
+                    <img src="images/video/b2.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Джульетта</div>
+                        <div class="song">Испания</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album29.jpg"/>
+                    <img src="images/video/b5.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Приключения</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Зверополис</div>
+                        <div class="song">США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album30.jpg"/>
+                    <img src="images/video/b7.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album31.jpg"/>
+                    <img src="images/video/b4.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album32.jpg"/>
+                    <img src="images/video/b1.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-small-el">
+                <div class="cover">
+                    <img src="images/video/b3.jpg"/>
+                </div>
+                <div class="info">
+                    <div class="music-style">2016, Фантастика</div>
+                    <div class="content">
+                        <div class="singer">Книга джунглей</div>
+                        <div class="song">Великобритания, США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album33.jpg"/>
+                    <img src="images/video/b2.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Джульетта</div>
+                        <div class="song">Испания</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album34.jpg"/>
+                    <img src="images/video/b5.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2016, Приключения</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Зверополис</div>
+                        <div class="song">США</div>
                     </div>
                 </div>
             </div>
             <div class="m-small-el">
                 <div class="cover">
-                    <img src="images/album35.jpg"/>
+                    <img src="images/video/b7.jpg"/>
                 </div>
                 <div class="info">
-                    <div class="music-style">ROCK</div>
+                    <div class="music-style">2013, Мелодрамы</div>
                     <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
-                    </div>
-                </div>
-            </div>
-            <div class="m-small-el">
-                <div class="cover">
-                    <img src="images/album36.jpg"/>
-                </div>
-                <div class="info">
-                    <div class="music-style">ROCK</div>
-                    <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
-                    </div>
-                </div>
-            </div>
-            <div class="m-small-el">
-                <div class="cover">
-                    <img src="images/album37.jpg"/>
-                </div>
-                <div class="info">
-                    <div class="music-style">ROCK</div>
-                    <div class="content">
-                        <div class="singer">Avicii</div>
-                        <div class="song">Waiting For Love</div>
+                        <div class="singer">Великий Гэтсби</div>
+                        <div class="song">Австралия, США</div>
                     </div>
                 </div>
             </div>
@@ -710,7 +640,9 @@
     </div>
 </section>
 <section class="m-footer container">
-    <div class="logo"></div>
+    <div class="logo simple">
+        <img src="images/logo_video.png">
+    </div>
     <div class="menu">
         <a href="#">Помощь</a>
         <a href="#">Обратная связь</a>
@@ -721,6 +653,9 @@
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
